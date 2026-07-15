@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Strata Nusa Karya | Game Technology Company</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            primary: '#6366f1',
+                            secondary: '#a855f7',
+                            accent: '#22c55e'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Logo Dummy -->
+                <div class="w-10 h-10 bg-gradient-to-tr from-brand-primary to-brand-secondary rounded-xl flex items-center justify-center font-bold text-xl tracking-wider text-white">S</div>
+                <span class="font-bold text-xl tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Strata Nusa Karya</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#tentang" class="text-gray-400 hover:text-white transition">Tentang Kami</a>
+                <a href="#layanan" class="text-gray-400 hover:text-white transition">Layanan</a>
+                <a href="#portfolio" class="text-gray-400 hover:text-white transition">Proyek</a>
+                <a href="#kontak" class="bg-brand-primary hover:bg-brand-primary/90 text-white px-5 py-2.5 rounded-lg transition shadow-lg shadow-brand-primary/20">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <!-- Background Glow effects -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-primary/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-secondary/20 rounded-full blur-3xl -z-10 animate-pulse" style="animation-delay: 2s;"></div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-primary/10 text-brand-primary border border-brand-primary/20 mb-6 uppercase tracking-widest">
+                <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping"></span> Game Technology Innovator
+            </span>
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-5xl mx-auto">
+                Menembus Batas Imajinasi Melalui <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-primary to-brand-secondary">Teknologi Game</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                PT. Strata Nusa Karya menghadirkan solusi teknologi mutakhir untuk pengembangan game, interaktivitas virtual, dan ekosistem digital masa depan.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#layanan" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-brand-primary to-brand-secondary hover:opacity-90 text-white font-semibold rounded-xl transition shadow-xl shadow-brand-primary/20 text-center">
+                    Jelajahi Solusi Kami
+                </a>
+                <a href="#tentang" class="w-full sm:w-auto px-8 py-4 bg-gray-850 hover:bg-gray-800 text-gray-300 font-semibold rounded-xl transition border border-gray-700 text-center">
+                    Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="py-24 border-t border-gray-800 bg-gray-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-primary mb-3">Siapa Kami</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Membangun Fondasi Industri Game Nasional</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        PT. Strata Nusa Karya adalah perusahaan teknologi yang berdedikasi untuk mendorong ekosistem industri game ke level berikutnya. Kami memadukan kreativitas tanpa batas dengan infrastruktur teknologi mutakhir.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        Fokus kami melampaui sekadar pembuatan game; kami membangun *engine*, tools, integrasi AI, serta arsitektur server yang memungkinkan para kreator mewujudkan dunia virtual yang imersif dan tanpa hambatan.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="border-l-2 border-brand-primary pl-4">
+                            <span class="block text-2xl font-bold text-white">99.9%</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">Server Uptime</span>
+                        </div>
+                        <div class="border-l-2 border-brand-secondary pl-4">
+                            <span class="block text-2xl font-bold text-white">Multiplatform</span>
+                            <span class="text-xs text-gray-500 uppercase tracking-wider">PC, Konsol & Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <!-- Placeholder Gambar/Visual -->
+                    <div class="w-full h-96 bg-gradient-to-br from-gray-800 to-gray-700 rounded-2xl border border-gray-700 flex items-center justify-center p-8 shadow-2xl overflow-hidden relative">
+                        <div class="absolute inset-0 bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                        <div class="text-center">
+                            <svg class="w-20 h-20 text-brand-primary mx-auto mb-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span class="text-sm font-semibold text-gray-400 tracking-wide block">Advanced Gaming Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN UTAMA -->
+    <section id="layanan" class="py-24 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brand-secondary mb-3">Layanan Kami</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-16">Solusi Teknologi Game End-to-End</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Layanan 1 -->
+                <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-primary/50 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v8a4 4 0 01-8 0V5a3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Game Development & Co-Dev</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Pengembangan game penuh (Full-cycle) maupun kolaboratif untuk berbagai platform menggunakan engine modern seperti Unreal Engine dan Unity.</p>
+                </div>
+                <!-- Layanan 2 -->
+                <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-secondary/50 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-secondary/10 text-brand-secondary flex items-center justify-center mb-6 group-hover:bg-brand-secondary group-hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Backend & Multiplayer Tech</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Arsitektur server berperforma tinggi, sistem matchmaking berkependaman rendah (low-latency), dan manajemen database game yang aman.</p>
+                </div>
+                <!-- Layanan 3 -->
+                <div class="p-8 rounded-2xl bg-gray-900 border border-gray-800 hover:border-brand-accent/50 transition duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Gamification & AR/VR Solusi</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Transformasi kebutuhan bisnis konvensional, simulasi edukasi, dan pemasaran interaktif lewat integrasi teknologi Augmented & Virtual Reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / PROYEK -->
+    <section id="portfolio" class="py-24 border-t border-gray-800 bg-gray-900/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-primary mb-3">Karya Kami</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Melihat Teknologi dalam Aksi</h3>
+                </div>
+                <p class="text-gray-400 max-w-md mt-4 md:mt-0 text-sm">Beberapa riset teknologi internal dan proyek kolaborasi strategis yang telah kami bangun.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Proyek 1 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-gray-900 border border-gray-800">
+                    <div class="h-64 bg-gradient-to-br from-indigo-900/50 to-gray-800 flex items-center justify-center relative overflow-hidden">
+                        <span class="text-6xl font-black text-white/5 tracking-wider absolute scale-150 select-none">STRATA ENGINE</span>
+                        <div class="text-center z-10">
+                            <span class="text-xs bg-brand-primary text-white px-3 py-1 rounded-full uppercase tracking-wider font-semibold">R&D Tech</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-white mb-2">Strata Core Net-Engine</h4>
+                        <p class="text-gray-400 text-sm">Framework sinkronisasi jaringan real-time untuk game multiplayer skala besar (MMO) dengan efisiensi bandwidth hingga 40%.</p>
+                    </div>
+                </div>
+                <!-- Proyek 2 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-gray-900 border border-gray-800">
+                    <div class="h-64 bg-gradient-to-br from-purple-900/50 to-gray-800 flex items-center justify-center relative overflow-hidden">
+                        <span class="text-6xl font-black text-white/5 tracking-wider absolute scale-150 select-none">METAVERSE</span>
+                        <div class="text-center z-10">
+                            <span class="text-xs bg-brand-secondary text-white px-3 py-1 rounded-full uppercase tracking-wider font-semibold">Enterprise</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold text-white mb-2">Nusa Virtual Spaces</h4>
+                        <p class="text-gray-400 text-sm">Platform pameran virtual interaktif berbasis web 3D yang mampu menampung ribuan user secara bersamaan di dalam browser tanpa lag.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HUBUNGI KAMI -->
+    <section id="kontak" class="py-24 border-t border-gray-800 bg-gradient-to-b from-brand-dark to-black relative">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">Siap Membangun Masa Depan Game Bersama?</h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Apakah Anda studio game yang butuh infrastruktur andal, atau perusahaan yang ingin mengadopsi teknologi gamifikasi? Tim engineer kami siap membantu.</p>
+            
+            <div class="inline-flex flex-col sm:flex-row items-center gap-6 p-2 rounded-2xl bg-gray-900 border border-gray-800 w-full max-w-lg mx-auto">
+                <div class="flex items-center gap-3 pl-4 py-2 w-full text-left">
+                    <svg class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span class="text-gray-300 text-sm">contact@stratanusakarya.com</span>
+                </div>
+                <a href="mailto:contact@stratanusakarya.com" class="w-full sm:w-auto text-center px-6 py-3 bg-brand-primary text-white text-sm font-semibold rounded-xl hover:bg-brand-primary/90 transition shadow-lg shadow-brand-primary/20 whitespace-nowrap">
+                    Kirim Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-gray-900 bg-black text-gray-600 text-sm text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 PT. Strata Nusa Karya. All rights reserved.</p>
+            <p class="text-gray-500">Inovasi Teknologi Game Indonesia</p>
+        </div>
+    </footer>
+
+</body>
+</html>
